@@ -3322,7 +3322,7 @@ draw_cmdline(int start, int len)
     if (cmdline_star > 0)
 	for (i = 0; i < len; ++i)
 	{
-	    msg_putchar('*');
+	    msg_putchar(' ');
 	    if (has_mbyte)
 		i += (*mb_ptr2len)(ccline.cmdbuff + start + i) - 1;
 	}
